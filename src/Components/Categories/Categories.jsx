@@ -14,18 +14,18 @@ const Categories = () => {
   const [category, setCategory] = useState("");
   const [categories, setCategories] = useState([]);
   const [editId, setEditId] = useState("");
-  const addCategory = async () => {
-    console.log("elave olunur");
-    try {
-      const querySnapShot = await addDoc(collection(db, "categories"), {
-        category,
-      });
-      setCategory("");
-      readCategories();
-    } catch (error) {
-      console.log(error.message);
-    }
-  };
+  // const addCategory = async () => {
+  // //   console.log("elave olunur");
+  // //   try {
+  // //     const querySnapShot = await addDoc(collection(db, "categories"), {
+  // //       category,
+  // //     });
+  // //     setCategory("");
+  // //     readCategories();
+  // //   } catch (error) {
+  // //     console.log(error.message);
+  // //   }
+  // // };
   const readCategories = async () => {
     try {
       const categoryElements = await getDocs(collection(db, "categories"));
@@ -98,7 +98,8 @@ const Categories = () => {
           onChange={(e) => setCategory(e.target.value)}
           onKeyDown={updateCategory}
         />
-        <button className="category-input-btn" onClick={addCategory}>
+        <button className="category-input-btn">
+        {/* <button className="category-input-btn" onClick={addCategory}> */}
           Əlavə et
         </button>
       </div>
@@ -135,3 +136,4 @@ const Categories = () => {
 };
 
 export default Categories;
+
