@@ -66,11 +66,11 @@ const AddArticle = () => {
       console.log(error.message);
     }
   };
-  const handleImageChange = (e) => {
-    if (e.target.files[0]) {
-      setImage(e.target.files[0]);
-    }
-  };
+  // const handleImageChange = (e) => {
+  //   if (e.target.files[0]) {
+  //     setImage(e.target.files[0]);
+  //   }
+  // };
   useEffect(() => {
     fetchCategory();
 
@@ -96,22 +96,22 @@ const AddArticle = () => {
 
     fetchArticle();
   }, [id]);
-  const updatedArticle = async (id) => {
-    const updatedDocRef = doc(db, "articles", id);
-    const contentRef = await getDoc(updatedDocRef);
-    const contentText = contentRef.data()?.content || "";
-    const updateNewArticle = await updateDoc(updatedDocRef, {
-      name: nameArticle,
-      author: nameAuthor,
-      content: plainContent,
-      category: selectedCategory,
-    });
-    if (contentText !== plainContent) {
-      await extractKeywordsFromFirstSentence(id);
-    }
+  // const updatedArticle = async (id) => {
+  //   const updatedDocRef = doc(db, "articles", id);
+  //   const contentRef = await getDoc(updatedDocRef);
+  //   const contentText = contentRef.data()?.content || "";
+  //   const updateNewArticle = await updateDoc(updatedDocRef, {
+  //     name: nameArticle,
+  //     author: nameAuthor,
+  //     content: plainContent,
+  //     category: selectedCategory,
+  //   });
+  //   if (contentText !== plainContent) {
+  //     await extractKeywordsFromFirstSentence(id);
+  //   }
 
-    navigate("/articles");
-  };
+  //   navigate("/articles");
+  // };
   return (
     <div className="container">
       <div className="add-article-container">
@@ -201,4 +201,5 @@ const AddArticle = () => {
 };
 
 export default AddArticle;
+
 
