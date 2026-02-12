@@ -3,8 +3,7 @@ import "./AddArticle.css";
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 import { useState } from "react";
-import { db, storage } from "../../config/firebase";
-import { uploadBytes, getDownloadURL, ref } from "firebase/storage";
+import { db } from "../../config/firebase";
 import { doc, getDoc, updateDoc } from "firebase/firestore";
 import { extractKeywordsFromFirstSentence } from "../Posts/Posts";
 import { useParams } from "react-router-dom";
@@ -23,7 +22,6 @@ const AddArticle = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
   const [addCategoryElement, setAddCategoryElement] = useState([]);
   const [image, setImage] = useState(null);
-  const [uploadProcess, setUploadProcess] = useState(false);
   const { id } = useParams();
   const navigate = useNavigate();
   const addArticle = async () => {
@@ -203,3 +201,4 @@ const AddArticle = () => {
 };
 
 export default AddArticle;
+
