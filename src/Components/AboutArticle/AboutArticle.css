@@ -1,0 +1,109 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 40px 20px;
+}
+
+.about-container h1 {
+  margin-top: 50px;
+}
+
+.about-article-container {
+  /* display: grid; */
+  /* grid-template-columns: 400px 1fr; */
+  /* gap: 18px; */
+  max-width: 1140px;
+  background-color: #131315;
+  border: 1px solid #ffffff52;
+  border-radius: 16px;
+  padding: 50px 100px;
+  margin: 0 auto;
+}
+
+.about-article-image {
+  /* grid-column: 1; */
+}
+
+.about-article-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 3px;
+  object-fit: cover;
+  float: left;
+}
+
+.about-article-container {
+  /* display: grid; */
+  /* grid-template-columns: 400px 1fr; */
+}
+
+/* .about-article-text-i grid konteyner et */
+.about-article-text {
+display: flex;
+}
+
+/* Birinci və ikinci paraqraf sağ sütunda olsun */
+.intro-text {
+  grid-row: 1;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+
+.side-paragraph:nth-of-type(1) {
+  grid-row: 2;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .about-article-container {
+    padding: 20px;
+  }
+  .about-article-img {
+    width: 100%;
+    height: 400px;
+  }
+  .side-paragraph:nth-of-type(1) {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 18px;
+  }
+  .below-paragraph {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+  }
+}
+@media (max-width: 768px) {
+  .about-article-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+  }
+  .about-article-img {
+    width: 100%;
+    max-height: 300px;
+    height: auto;
+  }
+  .side-paragraph:nth-of-type(1) {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+  }
+  .below-paragraph {
+    font-size: 10px;
+    line-height: 18px;
+  }
+}

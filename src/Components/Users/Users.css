@@ -1,0 +1,51 @@
+.users-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.users-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* max-width: 1200px; */
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.users-intro h1 {
+  color: white;
+}
+.users-intro button {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f2f2f2;
+}
+.users-table th,
+.users-table td {
+  padding: 20px 30px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+.users-table tr:hover {
+  background-color: #f7f7f7;
+}
+.user-edit-btn,
+.user-delete-btn {
+  color: #3498db;
+  font-size: 20px;
+}
+.list-number {
+  color: #2980b9;
+  font-weight: 400;
+}

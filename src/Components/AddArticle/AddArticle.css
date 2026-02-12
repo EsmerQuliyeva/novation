@@ -1,0 +1,48 @@
+.add-article-container {
+  padding: 30px;
+}
+.new-article-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+.new-article-input-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+label {
+  font-size: 20px;
+}
+.new-article-input-detail input,
+.new-article-input-detail input[type="file"],
+.select-add-category {
+  max-width: 400px;
+  width: 100%;
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  color: black;
+  font-size: 18px;
+}
+
+.ck-editor__editable_inline {
+  color: black !important;
+}
+.new-article-input-detail input[type="file"] {
+  color: white;
+}
+.new-article-btn {
+  padding: 10px 20px;
+  max-width: 200px;
+  font-size: 14px;
+  background-color: green;
+  color: white;
+  outline: none;
+  border: none;
+  margin-top: 80px;
+}

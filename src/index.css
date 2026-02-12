@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #1a1a2e;
+  color: #f0f0f0;
+  font-family: "Poppins", sans-serif;
+}
+/*! RESPPONSIVE CONTAINER */
+.container {
+  max-width: 1800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+@media (max-width: 1245px) {
+  .container {
+    max-width: 1200px; /* 1245px-ə qədər kiçildirik */
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 6px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 0 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 6px;
+  }
+}

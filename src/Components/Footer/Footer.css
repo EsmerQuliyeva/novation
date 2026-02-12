@@ -1,0 +1,132 @@
+.footer-container {
+  background-color: #160730;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  color: #fff;
+}
+
+.footer-main-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+.footer-container-left-part {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-logo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-logo {
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 61px;
+}
+
+.footer-logo-container p {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 61px;
+  margin-bottom: 20px;
+}
+
+.footer-links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-contact-tools {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-container-right-part {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.footer-scroll-arrow {
+  font-size: 80px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.footer-social-network-tools {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  position: absolute;
+  right: 50px;
+  bottom: 60px;
+}
+
+.footer-social-network-tool {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px;
+  font-size: 40px;
+  border-radius: 50%;
+}
+
+.footer-additional-part {
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+  .footer-social-network-tools {
+    position: static;
+    justify-content: start;
+  }
+  .footer-main-part {
+    flex-direction: column;
+    padding-right: 50px;
+  }
+  .footer-container-right-part {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .footer-logo {
+    font-size: 30px;
+  }
+
+  .footer-logo-container p {
+    font-size: 25px;
+  }
+  .footer-scroll-arrow {
+    font-size: 60px;
+  }
+}
