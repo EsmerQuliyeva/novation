@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import "./Posts.css";
 import { useNavigate } from "react-router-dom";
 import { db } from "../../config/firebase";
@@ -175,3 +175,4 @@ const Posts = () => {
 };
 
 export default Posts;
+
